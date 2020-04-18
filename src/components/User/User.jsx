@@ -1,5 +1,5 @@
 import React from 'react';
-import './Post.scss';
+import '../Post/Post.scss';
 
 class User extends React.Component {
   render() {

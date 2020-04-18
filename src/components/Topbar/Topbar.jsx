@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as LogoSvg } from '../assets/img/instagram-logo.svg';
+import { ReactComponent as LogoSvg } from '../../assets/img/instagram-logo.svg';
 import './Topbar.scss';
 
 class Topbar extends React.Component {

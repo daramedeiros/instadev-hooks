@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Post from '../components/Post';
-import Loading from '../components/Loading';
+import Post from '../components/Post/Post';
+import Loading from '../components/Loading/Loading';
 
 import './Feed.scss';
 
