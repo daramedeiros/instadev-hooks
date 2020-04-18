@@ -1,8 +1,7 @@
 import React from "react";
 import './Stories.scss';
 
-class Stories extends React.Component {
-  render() {
+const Stories =() => {
     return (
       <div className="container">
         <section className="stories">
@@ -28,7 +27,6 @@ class Stories extends React.Component {
         </section>
       </div>
     );
-  }
-}
+  };
 
 export default Stories;

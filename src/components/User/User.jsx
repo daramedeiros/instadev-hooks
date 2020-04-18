@@ -1,10 +1,7 @@
 import React from 'react';
 import '../Post/Post.scss';
 
-class User extends React.Component {
-  render() {
-    const { infoUser } = this.props;
-
+const User =( { infoUser }) => {
     return (
       <article className="post">
         <header className="post__header">
@@ -23,6 +20,5 @@ class User extends React.Component {
       </article>
     )
   }
-}
 
 export default User;

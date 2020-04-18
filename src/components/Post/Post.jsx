@@ -1,17 +1,8 @@
-import React from 'react';
+import React , { useState } from 'react';
 import '../Post/Post';
 
-class Post extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      like: false,
-    }
-  }
-
-  render() {
-    const { like } = this.state;
-    const { infoPost, infoUsuario } = this.props;
+const Post = ({ infoPost, infoUsuario }) => {
+    const [ like, setLike ] = useState(false);
 
     return (
       <article className="post">
@@ -36,7 +27,7 @@ class Post extends React.Component {
         <nav className="post__controls">
           <button
             className="post__control"
-            onClick={() => this.setState({ like: !like })}
+            onClick={() => setLike(!like)}
           >
             { like
               ? <i className="fas fa-heart" />
@@ -73,7 +64,6 @@ class Post extends React.Component {
         )}
       </article>
     )
-  }
-}
+};
 
 export default Post;
